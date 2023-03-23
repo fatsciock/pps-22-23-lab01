@@ -7,7 +7,7 @@ package lab01.example.model;
  */
 public class SimpleBankAccount implements BankAccount {
 
-    private double balance;
+    double balance;
     private final AccountHolder holder;
 
     public SimpleBankAccount(final AccountHolder holder, final double balance) {
@@ -42,7 +42,7 @@ public class SimpleBankAccount implements BankAccount {
         return this.balance >= amount;
     }
 
-    private boolean checkUser(final int id) {
+    boolean checkUser(final int id) {
         return this.holder.getId() == id;
     }
 }
